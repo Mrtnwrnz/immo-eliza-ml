@@ -7,7 +7,9 @@ The starting here is a .csv file with the raw scraped data, used to create a pre
 ## Installation
 Before predicting prices, make sure to install the requirements:
 
+```bash
 pip install -r requirements.txt
+```
 
 ## How to use
 ### Training the model
@@ -15,10 +17,9 @@ pip install -r requirements.txt
 If you only have properties to be predicted, you can skip this step.
 
 2. Run the script. It will print out a summary before and after cleaning and preprocessing, similar to the one in the screenshot below (example after cleaning):
-(image)
+![screenshot](./assets/printout_cleaning.png)
 By comparing these two you can monitor the modifications to your dataset, and doublecheck if everything went as expected.
 Note that all empty values and values containting "MISSING" should be removed, except for the variable 'surface_land_sqm'; the remaining empty values here are apartment listings, but those will be taken care of later.
-
 Along with the summaries, the script will print out statements after each action taken, enabeling you to closely monitor each step.
 
 3. The scores for the model will be printed out for you to check its accuracy. At the end of the process, the it will be saved into two seperate files, 'model_file_house.pkl' and 'model_file_apartment.pkl' in the 'models' folder.

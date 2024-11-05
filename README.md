@@ -18,14 +18,15 @@ If you only have properties to be predicted, you can skip this step.
 
 2. Run the script. It will print out a summary before and after cleaning and preprocessing, similar to the one in the screenshot below (example after cleaning):
 
-![screenshot](./assets/printout_cleaning.png)
+![screenshot_cl](./assets/printout_cleaning.png)
 
 By comparing these two you can monitor the modifications to your dataset, and doublecheck if everything went as expected.
 Note that all empty values and values containting "MISSING" should be removed, except for the variable 'surface_land_sqm'; the remaining empty values here are apartment listings, but those will be taken care of later.
 Along with the summaries, the script will print out statements after each action taken, enabeling you to closely monitor each step.
 
-3. The scores for the model will be printed out for you to check its accuracy. At the end of the process, the it will be saved into two seperate files, 'model_file_house.pkl' and 'model_file_apartment.pkl' in the 'models' folder.
+3. The scores for the model will be printed out for you to check its accuracy (as shown below). The trained model will be saved into two seperate files, 'model_file_house.pkl' and 'model_file_apartment.pkl' in the 'models' folder.
 
+![screenshot_sc](./assets/printout_scores.png)
 
 ### Predicting house and apartment prices
 1. Make sure that the 'models' folder contains two files, one for apartments, and one for houses.
@@ -54,4 +55,4 @@ Also revisiting the pre-processing, and better hyperparameter tuning are expecte
 - User convenience: putting the cript in .py files, providing a form to fill in estimation data, and in general more user interaction would be welcomed.
 
 ### Brussels area is a province.
-I do know it's not, but in this model it's treated as one, since in reality it has a lot in common with other procinces.
+I know it's not, but in this model it's treated as one.

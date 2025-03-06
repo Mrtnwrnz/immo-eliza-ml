@@ -1,17 +1,18 @@
 # immo-eliza-ml
+![Immo Eliza](./assets/for_sale.jpg)
 
-## Description
+## :scroll: Description
 After scraping and data analysis, this prediction model is the third step into BeCode's ImmoEliza project, aimed at creating a price prediction model for the Belgian house market.
-The starting here is a .csv file with the raw scraped data, used to create a preprocessing pipeline and train a machine leraning model, with the ability make price predictions on newly imported data.
+The starting point here is a .csv file with the raw scraped data, used to create a preprocessing pipeline and train a machine leraning model, with the ability make price predictions on newly imported data.
 
-## Installation
+## :gear: Installation
 Before predicting prices, make sure to install the requirements:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## How to use
+## :hammer_and_wrench: How to use
 ### Training the model
 1. Place your dataset in the folder 'data', and make sure to rename it to 'properties.csv'. This file should have the same columns as the original training data.
 If you only have properties to be predicted, you can skip this step.
@@ -35,7 +36,7 @@ Make sure that your dataset has the same schema as the original training set!
 3. Run the script. Your price predictions will be presented as a DataFrame.
 
 
-## Limitations
+## :warning: Limitations
 ### Only for 'family residences'
 To avoid outliers, the model was only trained for properties below 1 000 000 EUR, and maximum 5 bedrooms. 
 
